@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title>page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/david.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+body {background-color: lightgrey;}
+</style>
+<body class="david-theme-l5">
+
+<!-- Navbar -->
+<div class="david-top">
+ <div class="david-bar david-theme-d2 david-left-align david-large">
+  <a class="david-bar-item david-button david-hide-medium david-hide-large david-right david-padding-large david-hover-white david-large david-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="david-bar-item david-button david-padding-large david-theme-d4"><i class="fa fa-home david-margin-right"></i>Logo</a>
+  <a href="#" class="david-bar-item david-button david-hide-small david-padding-large david-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="david-bar-item david-button david-hide-small david-padding-large david-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="david-bar-item david-button david-hide-small david-padding-large david-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="david-dropdown-hover david-hide-small">
+    <button class="david-button david-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="david-badge david-right david-small david-green">3</span></button>     
+    <div class="david-dropdown-content david-card-4 david-bar-block" style="width:300px">
+      <a href="#" class="david-bar-item david-button">One new friend request</a>
+      <a href="#" class="david-bar-item david-button">new order by joshua</a>
+      <a href="#" class="david-bar-item david-button">new order by roster</a>
+    </div>
+  </div>
+  <a href="#" class="david-bar-item david-button david-hide-small david-right david-padding-large david-hover-white" title="My Account">
+    <img src="images/avatar2.png" class="david-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="david-bar-block david-theme-d2 david-hide david-hide-large david-hide-medium david-large">
+  <a href="#" class="david-bar-item david-button david-padding-large">Link 1</a>
+  <a href="#" class="david-bar-item david-button david-padding-large">Link 2</a>
+  <a href="#" class="david-bar-item david-button david-padding-large">Link 3</a>
+  <a href="#" class="david-bar-item david-button david-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="david-container david-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="david-row">
+    <!-- Left Column -->
+    <div class="david-col m3">
+      <!-- Profile -->
+      <div class="david-card david-round david-white">
+        <div class="david-container">
+         <h4 class="david-center">My Profile</h4>
+         <p class="david-center"><img src="images/avatar3.png" class="david-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw david-margin-right david-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw david-margin-right david-text-theme"></i> Dar es salaam, tz</p>
+         <p><i class="fa fa-birthday-cake fa-fw david-margin-right david-text-theme"></i> march 23, 2003</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="david-card david-round">
+        <div class="david-white">
+          <button onclick="myFunction('Demo1')" class="david-button david-block david-theme-l1 david-left-align"><i class="fa fa-circle-o-notch fa-fw david-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="david-hide david-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="david-button david-block david-theme-l1 david-left-align"><i class="fa fa-calendar-check-o fa-fw david-margin-right"></i> My Events</button>
+          <div id="Demo2" class="david-hide david-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="david-button david-block david-theme-l1 david-left-align"><i class="fa fa-users fa-fw david-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="david-hide david-container">
+         <div class="david-row-padding">
+         <br>
+           <div class="david-half">
+             <img src="images/lights.jpg" style="width:100%" class="david-margin-bottom">
+           </div>
+           <div class="david-half">
+             <img src="images/nature.jpg" style="width:100%" class="david-margin-bottom">
+           </div>
+           <div class="david-half">
+             <img src="images/d2.jpg" style="width:100%" class="david-margin-bottom">
+           </div>
+           <div class="david-half">
+             <img src="images/forest.jpg" style="width:100%" class="david-margin-bottom">
+           </div>
+           <div class="david-half">
+             <img src="images/nature.jpg" style="width:100%" class="david-margin-bottom">
+           </div>
+           <div class="david-half">
+             <img src="images/d.jpg" style="width:100%" class="david-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="david-card david-round david-white david-hide-small">
+        <div class="david-container">
+          <p>Interests</p>
+          <p>
+            <span class="david-tag david-small david-theme-d5">News</span>
+            <span class="david-tag david-small david-theme-d3">Labels</span>
+            <span class="david-tag david-small david-theme-d2">Games</span>
+            <span class="david-tag david-small david-theme-d1">Friends</span>
+            <span class="david-tag david-small david-theme">Games</span>
+            <span class="david-tag david-small david-theme-l1">Friends</span>
+            <span class="david-tag david-small david-theme-l2">Food</span>
+            <span class="david-tag david-small david-theme-l3">Design</span>
+            <span class="david-tag david-small david-theme-l4">Art</span>
+            <span class="david-tag david-small david-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="david-container david-display-container david-round david-theme-l4 david-border david-theme-border david-margin-bottom david-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="david-button david-theme-l3 david-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="david-col m7">
+    
+      <div class="david-row-padding">
+        <div class="david-col m12">
+          <div class="david-card david-round david-white">
+            <div class="david-container david-padding">
+              <h6 class="david-opacity">Share Feeling with other</h6>
+              <p contenteditable="true" class="david-border david-padding">Status: Feeling Blue</p>
+              <button type="button" class="david-button david-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="david-container david-card david-white david-round david-margin"><br>
+        <img src="images/avatar2.png" alt="Avatar" class="david-left david-circle david-margin-right" style="width:60px">
+        <span class="david-right david-opacity">1 min</span>
+        <h4>marwa </h4><br>
+        <hr class="david-clear">
+        <p>fdgdggsghgvhvkvkkvkgvdkvgdkvdkbhvgdfgdgufvdvdfjkvdfvdfvgdfgvdjkvggufgvgdkjvbbvvfdvbhvb hvbhgvvjvb</p>
+          <div class="david-row-padding" style="margin:0 -16px">
+            <div class="david-half">
+              <img src="images/lights.jpg" style="width:100%" alt="Northern Lights" class="david-margin-bottom">
+            </div>
+            <div class="david-half">
+              <img src="images/black h.jpg" style="width:100%" alt="Nature" class="david-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="david-button david-theme-d1 david-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="david-button david-theme-d2 david-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="david-container david-card david-white david-round david-margin"><br>
+        <img src="images/avatar5.png" alt="Avatar" class="david-left david-circle david-margin-right" style="width:60px">
+        <span class="david-right david-opacity">16 min</span>
+        <h4>roster mnyama</h4><br>
+        <hr class="david-clear">
+        <p>ghghgsgigbdagvbhhbfvbq;hfvbhuhvhwhgvbwihguvgyhwrhugh;wrbvhnwuyvqnuvuyvbgurwuogvbwryt8bvwuoyrtyvgfw.</p>
+        <button type="button" class="david-button david-theme-d1 david-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="david-button david-theme-d2 david-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="david-container david-card david-white david-round david-margin"><br>
+        <img src="images/avatar6.png" alt="Avatar" class="david-left david-circle david-margin-right" style="width:60px">
+        <span class="david-right david-opacity">32 min</span>
+        <h4>tior</h4><br>
+        <hr class="david-clear">
+        <p>Have you seen this?</p>
+        <img src="images/haker.jpg" style="width:100%" class="david-margin-bottom">
+        <p>dghfavbagfjagfgfbvjsgfvgfrgjskgjvwgjsgkvrgfksjgfsjghgyrushgvrhgvwubgrvgwrwegrgwug.</p>
+        <button type="button" class="david-button david-theme-d1 david-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="david-button david-theme-d2 david-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="david-col m2">
+      <div class="david-card david-round david-white david-center">
+        <div class="david-container">
+          <p>Upcoming Events:</p>
+          <img src="images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="david-button david-block david-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="david-card david-round david-white david-center">
+        <div class="david-container">
+          <p>Friend Request</p>
+          <img src="images/avatar2.png" alt="Avatar" style="width:50%"><br>
+          <span>programer</span>
+          <div class="david-row david-opacity">
+            <div class="david-half">
+              <button class="david-button david-block david-green david-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="david-half">
+              <button class="david-button david-block david-red david-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="david-card david-round david-white david-padding-16 david-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="david-card david-round david-white david-padding-32 david-center">
+        <p><i class="fa fa-bug david-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("david-show") == -1) {
+    x.className += " david-show";
+    x.previousElementSibling.className += " david-theme-d1";
+  } else { 
+    x.className = x.className.replace("david-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" david-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("david-show") == -1) {
+    x.className += " david-show";
+  } else { 
+    x.className = x.className.replace(" david-show", "");
+  }
+}
+</script>
+</body>
+</html> 
